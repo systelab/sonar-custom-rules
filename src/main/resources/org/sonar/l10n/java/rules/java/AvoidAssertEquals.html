@@ -1,0 +1,21 @@
+<p>Using assertEquals from JUnit is discouraged in favor of AssertJ's fluent assertions. AssertJ provides a more readable and maintainable assertion API, improving test clarity and debugging information.</p>
+
+<h2>Noncompliant Code Example</h2>
+<pre>
+class MyClass {
+  private String expectedValue = "some expected value";
+  void checkSomething(String a) {
+     assertEquals(expectedValue, a); // Noncompliant
+  }
+}
+</pre>
+
+<h2>Compliant Solution</h2>
+<pre>
+class MyClass {
+  private String expectedValue = "some expected value";
+  void checkSomething(String a) {
+     assertThat(actualValue).isEqualTo(expectedValue);  // Compliant
+  }
+}
+</pre>

@@ -1,0 +1,11 @@
+{
+  "title": "Use assertJ equalsThat instead of Junit assertEquals method",
+  "type": "Bug",
+  "status": "ready",
+  "tags": [
+    "bugs",
+    "assert"
+
+  ],
+  "defaultSeverity": "Minor"
+}
